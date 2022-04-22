@@ -1,0 +1,21 @@
+{
+  "name": "sigaa-tasks",
+  "version": "1.0.0",
+  "description": "A robot to find and list all tasks from an UFRN sigaa account",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "robot",
+    "tasks list",
+    "web crawler"
+  ],
+  "author": "andrfranklin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
