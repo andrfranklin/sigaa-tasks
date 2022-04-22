@@ -1,6 +1,8 @@
 'use strict'
 
 import express from 'express';
+import dotenv from 'dotenv';
+dotenv.config();
 
 //import routes
 import { routes } from './src/controller/index.js';
@@ -17,7 +19,7 @@ function error(status, message) {
 
 App.use(routes);
 
-const Port = 3000;
+const Port = process.env.PORT || 5000;
 App.listen(Port, () => {
     console.log(`The API is running on port ${Port}`);
 });
