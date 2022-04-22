@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "test",
-    "start": "node app.js"
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "commit": "git-cz"
   },
   "keywords": [
     "robot",
@@ -17,5 +19,15 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "nodemon": "^2.0.15"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
