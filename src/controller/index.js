@@ -1,9 +1,9 @@
 'use strict'
 
 import express from 'express';
-import { crawler } from './crawler.js';
+import { scraper } from './scraper.js';
 
 const routes = express.Router();
-routes.use('/api', crawler);
+routes.use('/api', scraper);
 
 export { routes };

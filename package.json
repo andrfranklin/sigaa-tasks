@@ -7,7 +7,7 @@
   "scripts": {
     "test": "test",
     "start": "node app.js",
-    "start:dev": "nodemon app.js",
+    "dev": "nodemon app.js",
     "commit": "git-cz"
   },
   "keywords": [
@@ -19,7 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "puppeteer": "^13.6.0"
   },
   "devDependencies": {
     "commitizen": "^4.2.4",
