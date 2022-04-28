@@ -45,6 +45,9 @@ scraper.get('/', async (req, res) => {
         return tableAsJson;
     });
     
+    page.click('#info-sistema > div > span.sair-sistema > a');
+    await page.waitForNavigation();
+
     // close browser
     browser.close();
 
