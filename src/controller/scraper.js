@@ -6,8 +6,8 @@ const scraper = express.Router();
 scraper.get('/', async (req, res) => {
     //only for development
     req.body = {
-        username: '',
-        password: '',
+        username: process.env.USERNAME,
+        password: process.env.PASSWORD,
     }
 
     // open browser
